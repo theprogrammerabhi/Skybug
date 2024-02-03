@@ -1,54 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Calculator</title>
-        <link rel="stylesheet" href="./style.css">
-        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    </head>
-    <body>
-        <div class="container">
-            <div class="heading">
-                <h1>
-                    Calculator
-                </h1>
-                <p>
-                    A simple calculator made with HTML, CSS and JavaScript.
-                </p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Form </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</head>
+<style>
+    fieldset{
+        border: 4px solid black;
+        padding: 5px;
+        position: relative;
+        top:30px;
+    }
+    legend{
+        border: 3px solid black;
+        width:auto;
+        font-size: 1.1em;
+        border-radius: 10px;
+        position: relative;
+        top:0px;
+        float:initial;
+    } 
+    img{
+        width:20%;
+        margin-bottom: 50px;
+    }
+</style>
+<body>
+    <div class="container-fluid">
+        <div class="card">
+            <div class="card-heading">
+                <h3>Employee Registration</h3>
             </div>
-            <div class="calculator">
-                <input type="text" id="display" disabled>
-                <div class="buttons">
-                    <button onclick="appendNumber('7')">7</button>
-                    <button onclick="appendNumber('8')">8</button>
-                    <button onclick="appendNumber('9')">9</button>
-                    <button class="operation" onclick="appendOperator('/')">÷</button>
-                    <button onclick="appendNumber('4')">4</button>
-                    <button onclick="appendNumber('5')">5</button>
-                    <button onclick="appendNumber('6')">6</button>
-                    <button class="operation" onclick="appendOperator('*')">
-                        <ion-icon name="close-outline"></ion-icon>
-                    </button>
-                    <button onclick="appendNumber('1')">1</button>
-                    <button onclick="appendNumber('2')">2</button>
-                    <button onclick="appendNumber('3')">3</button>
-                    <button class="operation" onclick="appendOperator('-')">-</button>
-                    <button></button>
-                    <button onclick="appendNumber('0')">0</button>
-                    <button onclick="appendDecimal('.')">.</button>
-                    <button class="operation" onclick="appendOperator('+')">+</button>
-                    <button class="operator" onclick="backspace()">
-                        <ion-icon name="backspace-outline"></ion-icon>
-                    </button>
-                    <button class="operator" onclick="clearDisplay()">C</button>
-                    <button class="operator equal" onclick="calculate()">=</button>
+            
+
+         <div class="card-body">
+        
+            <button type="button" class=" btn btn-outline-success"> Personal Information </button>
+        
+        
+        <button type="button" class="btn btn-outline-success">Appointment Information </button>
+    
+    
+        <button type="button" class=" btn btn-outline-success"> Bank Account Information </button>
+    
+         </div>
+        
+        <form>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div class="row">
+                    <div class="col-3">
+                        <label for="input Name" class="form-label"> Employee Unique Id <span style="color:red">*</span></label>
+                        <input type="text " class="form-control" placeholder="Enter Employee Unique Id" aria-label="Enter Employee Unique Id">
                 </div>
+                <div class="col-3">
+                    <label for="input Name" class="form-label">First name<span style="color:red">*</span></label>
+                    <input type="text " class="form-control" placeholder="Enter First name" aria-label="Enter First name">
             </div>
+            <div class="col-3">
+                <label for="input Name" class="form-label"> Middle name<span style="color:red">*</span></label>
+                <input type="text " class="form-control" placeholder="Enter Middle name" aria-label="Enter Middle name">
         </div>
+            <div class="col-3">
+             <img src="do.png" alt="profile picture">
+            </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <label for="input Name" class="form-label"> Last Name<span style="color:red">*</span></label>
+                        <input type="text " class="form-control" placeholder="Enter Last Name" aria-label="Enter Last Name">
+                </div>
+                <div class="col-3">
+                    <label for="input Name" class="form-label">Father's/Husband Name<span style="color:red">*</span></label>
+                    <input type="text " class="form-control" placeholder="Enter Father's/Husband Name" aria-label="Enter Father's/Husband Name">
+            </div>
+            <div class=" form-group col-3">
+                <label for="date" class="form-label"> Date of Birth<span style="color:red">*</span></label>
+                <input type="date" class="form-control"id="date" placeholder="MM/DD/YYYY">
+        </div>
+        <div class="col-3">
+            <input class="form-control" type="file" id="form file">
+    </div>
+
+    <div class="row">
+        <div class="col-3">
+            <label for="type Number" class="form-label"> Age <span style="color:red">*</span></label>
+            <input type="number " class="form-control" placeholder="Employee Age" aria-label="Employee Age">
+    </div>
+    <div class="col-3">
+        <label for="input Name" class="form-label"> Gender <span style="color:red">*</span></label>
+        <select  class="form-control" id="input Name" placeholder="--select--" aria-label="--select--">
+            <option>--select--</option>
+            <option>Male</option>
+            <option>Female</option>
+            </select>
+</div>
+        
+<div class="col-3">
+    <label for="type Number" class="form-label"> Height <span style="color:red">*</span></label>
+            <input type="number " class="form-control" placeholder="Enter Height.in(cm)" aria-label="Enter Height.in(cm)">
+    </div>
+   
+<div class="col-3">
+    <label for="input Name" class="form-label"> Caste <span style="color:red">*</span></label>
+        <select  class="form-control" id="input Name" placeholder="--select--" aria-label="--select--">
+            <option>--select--</option>
+            <option>General</option>
+            <option>OBC</option>
+            <option>ST</option>
+            <option>SC</option>
+            </select>
+</div>
+    </div>
+
+    <div class="row">
+        <div class="col-3">
+            <label for="input Name" class="form-label">Sub caste<span style="color:red">*</span></label>
+            <input type="text " class="form-control" placeholder="Enter Sub Caste" aria-label="Enter Sub Caste">
+    </div>
+
+    <div class="col-3">
+        <label for="input Name" class="form-label"> Religion <span style="color:red">*</span></label>
+        <select  class="form-control" id="input Name" placeholder="--select--" aria-label="--select--">
+            <option>--select--</option>
+            <option>Hindu</option>
+            <option>Muslim</option>
+            <option>Christian</option>
+            <option>Sikhism</option>
+            </select>
+</div>
+        
+<div class="col-3">
+    <label for="input Name" class="form-label"> Idenitication Mark <span style="color:red">*</span></label>
+            <input type="text" class="form-control" placeholder="Enter Idenitication mark" aria-label="Enter Idenitication Mark">
+    </div>
+   
+<div class="col-3">
+    <label for="input Name" class="form-label"> Blood <span style="color:red">*</span></label>
+        <select  class="form-control" id="input Name" placeholder="--select--" aria-label="--select--">
+            <option>--select--</option>
+            <option>O+</option>
+            <option>A+</option>
+            <option>B+</option>
+            <option>AB+</option>
+            </select>
+</div>
+   </div>
+            <div class="row">
+                <div class="col-3">
+                    <label for="input Name" class="form-label"> Handicapped (PWD)<span style="color:red">*</span></label>
+                    <select  class="form-control" id="input Name" placeholder="--select--" aria-label="--select--">
+                        <option>--select--</option>
+                        <option>YES</option>
+                         <option>NO</option>
+            </select>
+                </div>
+                <div class="col-3">
+                    <label for="input Name" class="form-label"> Critical illness<span style="color:red">*</span></label>
+                     <select  class="form-control" id="input Name" placeholder="--select--" aria-label="--select--">
+                        <option>--select--</option>
+                        <option>Yes</option>
+                         <option>NO</option>
+             </select>
+                </div>
+
+                <div class="col-3">
+                    <label for="type Number" class="form-label"> PAN NO.<span style="color:red">*</span></label>
+                    <input type="number " class="form-control" placeholder="Enter PAN No" aria-label="Enter PAN No">
+            </div>
+            <div class="col-3">
+                <label for="type Number" class="form-label"> Addhaar NO.<span style="color:red">*</span></label>
+                <input type="number " class="form-control" placeholder="Enter Addhaar No" aria-label="Enter Addhaar No">
+        </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-3">
+            <label for="type Number" class="form-label"> Samagra ID No<span style="color:red">*</span></label>
+            <input type="number " class="form-control" placeholder="Enter Samagra ID No" aria-label="Samagra ID No">
+                </div>
+                <div class="col-3">
+                    <label for="type Number" class="form-label"> Employee Treasury Code<span style="color:red">*</span></label>
+                    <input type="number " class="form-control" placeholder=" Enter Employee Treasury Code" aria-label="Employee Treasury Code">
+               </div>
+               <div class="col-3">
+                <label for="input Name" class="form-label"> Hobbies<span style="color:red">*</span></label>
+                <input type="text " class="form-control" placeholder="Enter Hobbies" aria-label="Enter Hobbies">
+                </div>
+              
+                    <div class="col-3">
+                        <label for="type Number" class="form-label"> Mobile No <span style="color:red">*</span></label>
+                        <input type="number " class="form-control" placeholder=" Enter Mobile No" aria-label="Enter Mobile No">
+                   </div>
+            </div>
+             
+            <div class="row">
+                <div class="col-3">
+                    <label for="email" class="form-label"> Email ID <span style="color:red">*</span></label>
+                    <input type="email" class="form-control" placeholder="Enter Email ID" aria-label="Enter Email ID">
+                </div>
+
+                        <div class="col-3">
+                            <label for="input Name" class="form-label"> Whether the first page of E-Service Book is Ceritified<span style="color:red">*</span></label>
+                             <select  class="form-control" id="input Name" placeholder="--select--" aria-label="--select--">
+                                <option>--select--</option>
+                                <option>Yes</option>
+                                 <option>NO</option>
+                               </select>
+
+                        </div>
+
+                
+                        <div class=" form-group col-3">
+                            <label for="date" class="form-label"> Certification Date<span style="color:red">*</span></label>
+                            <input type="date" class="form-control"id="date" placeholder="MM/DD/YYYY">
+
+  
+            </div>
+
+            </fieldset>
+        </form>
     </div>
 </div>
-<script src="main.js"></script>
+        
+      </div>
 </body>
 </html>
