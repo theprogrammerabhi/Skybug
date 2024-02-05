@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Form </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</head>
+<style>
+    fieldset{
+        border: 1px solid skyblue;
+        padding: 10px;
+        position: relative;
+        top:30px;
+    }
+    legend{
+        border: 1px solid skyblue;
+        width:auto;
+        font-size: 1.1em;
+        border-radius: 10px;
+        position: relative;
+        top:0px; 
+        float:initial;
+        color:darkgreen;
+    } 
+    .img1{
+           border:4px solid lightgray;
+           width:103px;
+           height:90px;
+           position: relative;
+           left:110px;
+    }
+    .img2{
+        position: relative;
+        left:110px;
+    }
+    .btn{
+        width:70px;
+        position: relative;
+        left:600px;
+        top:35px;
+    }
+    label{
+        font-weight: bold;
+        font-size:12px;
+
+    }
+
+</style>
+<body>
+    <div class="container-fluid">
+        <div class="card">
+            <div class="card-heading bg-warning">
+                <h3>Student Registration</h3>
+
+            </div>
+                <div class="card-body bg-info bg-opacity-10">
+                    <form>
+                        <fieldset> 
+                            <legend class="float-none w-auto px-5">Student Details</legend>
+                            <div class="row">
+                                
+                                 <div class="col-3">
+                                    <label for="type Number" class="form-label"> Academic Session<span style="color:red">*</span></label>
+                                    <select class="form-control form-select">
+                                        <option>2023-24</option>
+                                        <option>2022-23</option>
+                                        <option>2021-22</option>
+                                        <option>2020-21</option>
+                                        <option>2019-20</option>
+                                        </select>
+                                 </div>
+                                   
+                                 <div class="col-3">
+                                    <label for="type Number" class="form-label"> Class<span style="color:red">*</span></label>
+                                    <select class="form-control form-select">
+                                        <option>Select class</option>
+                                        <option>Nur</option>
+                                        <option>LKG</option>
+                                        <option>UKG</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                        <option>10</option>
+                                        <option>11</option>
+                                        <option>12</option>
+                                    </select>
+                                 </div>
+
+                                 
+               
+               
+                                <div class="col-3">
+                                  <label for="type Number" class="form-label"> Scholar No<span style="color:red">*</span></label>
+                                   <input type="number " class="form-control" placeholder="Enter Scholar No" aria-label="Enter Scholar No">
+                                 </div>
+                                 
+                                 <div class="col-3">
+                                    <label for="type Number" class="form-label"> Enrollment No<span style="color:red">*</span></label>
+                                     <input type="number " class="form-control" placeholder="Enter Enrollment No (optional)" aria-label="Enter Enrollment No (optional)">
+                                </div>
+                           
+                             </div>
+
+                             <div class="row">
+                                <div class="col-6">
+                                    <label for="input Name" class="form-label"> Student Name<span style="color:red">*</span></label>
+                                    <input type="text " class="form-control" placeholder="Enter Student Name" aria-label="Enter Student Name">
+                                 </div>
+                                                                                                                                                                                                                                                                                
+                                 
+                                <div class="col-3">
+                                    <label for="input Name" class="form-label"> Father's Name<span style="color:red">*</span></label>
+                                    <input type="text " class="form-control" placeholder="Enter Father's Name" aria-label="Enter Father's Name">
+                                </div>
+                                
+                                 
+                                <div class="col-3">
+                                    <label for="input Name" class="form-label"> Mother's Name<span style="color:red">*</span></label>
+                                    <input type="text " class="form-control" placeholder="Enter Mother's Name" aria-label="Enter Mother's Name">
+                                </div>
+
+                             </div>
+
+                             <div class="row">
+                                <div class="col-6">
+                                    <label for="input Name" class="form-label"> Student Name(In Hindi)<span style="color:red">*</span></label>
+                                    <input type="text " class="form-control" placeholder="Enter Student Name(In Hindi)" aria-label="Enter Student Name">
+                                 </div>
+                                                                                                                                                                                                                                                                                
+                                 
+                                <div class="col-3">
+                                    <label for="input Name" class="form-label"> Father's Name(In Hindi)<span style="color:red">*</span></label>
+                                    <input type="text " class="form-control" placeholder="Enter Father's Name(In Hindi)" aria-label="Enter Father's Name">
+                                </div>
+                                
+                                 
+                                <div class="col-3">
+                                    <label for="input Name" class="form-label"> Mother's Name(In Hindi)<span style="color:red">*</span></label>
+                                    <input type="text " class="form-control" placeholder="Enter Mother's Name(In Hindi)" aria-label="Enter Mother's Name">
+                                </div>
+
+                             </div>
+
+                             <div class="row fs-12 mt-2">
+                                <div class="col-3">
+                                    <label for="input Name" class="form-label"> Gender <span style="color:red">*</span></label>
+                                    <select class="form-control form-select">
+                                        <option>Male</option>
+                                        <option>Female</option>
+                                        </select>
+                                </div>
+                                <div class="col-3">
+                                    <label for="input Name" class="form-label"> Category <span style="color:red">*</span></label>
+                                    <select class="form-control form-select">
+                                        <option>select</option>
+                                        <option>General</option>
+                                        <option>OBC</option>
+                                        <option>ST</option>
+                                        <option>SC</option>
+                                        </select>
+                                </div>
+
+                                <div class="col-3">
+                                    <label for="input Name" class="form-label"> DO you have Samagra ID?<span style="color:red">*</span></label>
+                                    <select class="form-control form-select">
+                                        <option>YES</option>
+                                        <option>No</option>
+                                        </select>
+                                </div>
+
+                                <div class="col-3">
+                                    <label for="type Number" class="form-label"> Samagra ID <span style="color:red">*</span></label>
+                                     <input type="number " class="form-control" placeholder="Enter Samagra ID" aria-label="Enter Samagra ID">
+                                </div>
+                           
+                             </div>
+
+                            <div class="row">
+                                <div class=" form-group col-3">
+                                    <label for="date" class="form-label"> Date of Birth (DD/MM/YYYY)<span style="color:red">*</span></label>
+                                    <input type="date" class="form-control"id="date" placeholder="MM/DD/YYYY">
+                                </div>
+
+                                <div class=" form-group col-3">
+                                    <label for="date" class="form-label"> Admission Date<span style="color:red">*</span></label>
+                                    <input type="date" class="form-control fs-12"id="date" placeholder="MM/DD/YYYY">
+                                </div>
+                                <div class="col-3">
+                                    <label for="type Number" class="form-label"> Mobile NO <span style="color:red">*</span></label>
+                                     <input type="number " class="form-control" placeholder="Enter 10 digits Mobile No" aria-label="Enter moblie ">
+                                </div>
+                                <div class="col-3">
+                                    <label for="input Name" class="form-label"> Email<span style="color:red">*</span></label>
+                                    <input type="email " class="form-control" placeholder="Enter Email" aria-label="Enter Mother's Name">
+                                </div>
+
+                             </div>
+
+                             <div class="row">
+                                <div class="col-3">
+                                    <label for="input Name" class="form-label">Size of T-Shirt <span style="color:red">*</span></label>
+                                    <select class="form-control form-select">
+                                        <option>Select T-Size </option>
+                                        <option> M size </option>
+                                        <option> S size </option>
+                                        <option> XL size </option>
+                                        <option> XXL size </option>
+                                        </select>
+                                </div>
+                                <div class="col-3">
+                                    <label for="input Name" class="form-label">Size of Track Suit<span style="color:red">*</span></label>
+                                    <select class="form-control form-select">
+                                        <option>Select Track Suit Size </option>
+                                        <option> M size </option>
+                                        <option> S size </option>
+                                        <option> XL size </option>
+                                        <option> XXL size </option>
+                                        </select>
+                                </div>
+                                
+                                <div class="col-3">
+                                    <label for="input Name" class="form-label">Size of Shoes <span style="color:red">*</span></label>
+                                    <select class="form-control form-select">
+                                        <option>Select Shoes Size</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                        <option>10</option>
+                                        <option>11</option>
+                                        <option>12</option>
+                                        </select>
+                                </div>
+
+                                <div class="col-3">
+                                    <label for="type Number" class="form-label"> Weight (KG)<span style="color:red">*</span></label>
+                                     <input type="number " class="form-control" placeholder="Enter Weight in KG" aria-label="Enter Samagra ID">
+                                </div>
+                           
+                             </div>
+                        </fieldset>
+                    </form>
+                    <br>
+                    <br>
+                     
+                    <form>
+                        <fieldset> 
+                            <legend class="float-none w-auto px-3">Address Details</legend>
+                            <div class="row">
+                                <div class="col-3">
+                                    <label for="input Name" class="form-label">State <span style="color:red">*</span></label>
+                                    <select class="form-control form-select">
+                                        <option>Select State </option>
+                                        <option> Arunachal Pradesh </option>
+                                        <option>Andhra Pradesh</option> 
+                                        <option>Assam </option>
+                                        <option> Bihar</option>
+                                        <option>Chhattisgarh</option>
+                                        <option> Uttar Pradesh</option>
+                                         <option> Madhya Pradesh</option>        
+                                        <option> Gujarat</option>
+                                    </select>
+                                </div>
+                                <div class="col-3">
+                                    <label for="input Name" class="form-label">Division <span style="color:red">*</span></label>
+                                    <select class="form-control form-select">
+                                        <option>Select Division  </option>
+                                        <option> 1 </option>
+                                        <option>2</option> 
+                                        <option>3 </option>
+                                        <option> 4</option>
+                                        <option>5</option>
+                                        <option> 6</option>
+                                         <option> 7</option>        
+                                        <option> 8</option>
+                                    </select>
+                                </div>
+
+
+                                <div class="col-3">
+                                    <label for="input Name" class="form-label">District <span style="color:red">*</span></label>
+                                    <select class="form-control form-select">
+                                        <option>Select District </option>
+                                        <option> 1 </option>
+                                        <option>2</option> 
+                                        <option>3 </option>
+                                        <option> 4</option>
+                                        <option>5</option>
+                                        <option> 6</option>
+                                         <option> 7</option>        
+                                        <option> 8</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="col-3">
+                                    <label for="input Name" class="form-label">BLock <span style="color:red">*</span></label>
+                                    <select class="form-control form-select">
+                                        <option>Select block </option>
+                                        <option> 1 </option>
+                                        <option>2</option> 
+                                        <option>3 </option>
+                                        <option> 4</option>
+                                        <option>5</option>
+                                        <option> 6</option>
+                                         <option> 7</option>        
+                                        <option> 8</option>
+                                    </select>
+                                </div>
+
+                            </div>
+
+                            <div class="row">
+                                <div class="col-3">
+                                    <label for="type Number" class="form-label"> PIN Code<span style="color:red">*</span></label>
+                                     <input type="number " class="form-control" placeholder="Enter PIN Code" aria-label="Enter PIN Code">
+                                 </div>
+                                 <div class="col-3">
+                                       <label for="input Name" class="form-label"> Address <span style="color:red">*</span></label>
+                                        <input type="text " class="form-control" placeholder="Enter Address" aria-label="Enter Address">
+                                 </div>
+                                     
+                            </div>
+                        </fieldset>
+                    </form>
+                    <br>
+                    <br>
+                    <form>
+                        <fieldset>
+                            <legend> Personal Idenitication Mark </legend>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <label for="input Name" class="form-label"> Mark.01<span style="color:red">*</span></label>
+                                         <input type="text " class="form-control" placeholder="Enter Personal Idenitication" aria-label="Enter Personal Iden">
+                                  </div>
+
+                                  <div class="col-6">
+                                    <label for="input Name" class="form-label"> Mark.02<span style="color:red">*</span></label>
+                                     <input type="text " class="form-control" placeholder="Enter Personal Idenitication(optional)" aria-label="Enter Personal Iden">
+                              </div>
+
+
+                                </div>
+                        </fieldset>
+
+                    </form>
+                    <br>
+                    <br>
+                    <form>
+                        <fieldset>
+                             <legend> Nomination & Eligibility</legend>
+                             <div class="row">
+                                 <div class="col-4">
+                                    <label for="input Name" class="form-label">Sport Name <span style="color:red">(select atleast one sport)*</span></label>
+                                    <select class="form-control form-select">
+                                        <option>Select sport</option>
+                                        <option>Cricket</option>
+                                        <option>Tennis</option>
+                                        <option>Volleyball</option>
+                                        <option> Baseball</option>
+                                        </select>
+                                 </div>
+                                    
+                                 <div class="col-3">
+                                    <label for="input Name" class="form-label">Age Group<span style="color:red">*</span></label>
+                                    <select class="form-control form-select">
+                                        <option>Select  Age sport</option>
+                                        <option>Cricket</option>
+                                        <option>Tennis</option>
+                                        <option>Volleyball</option>
+                                        <option> Baseball</option>
+                                        </select>
+                                 </div>
+
+                                 <div class="col-3">
+                                    <label for="input Name" class="form-label">Category<span style="color:red">*</span></label>
+                                    <select class="form-control form-select">
+                                        <option>None Selected </option>
+                                        <option>Cricket</option>
+                                        <option>Tennis</option>
+                                        <option>Volleyball</option>
+                                        <option> Baseball</option>
+                                        </select>
+                                 </div>
+                                   
+                                 <div class="col-2">
+                                    <label for="input Name" class="form-label">Weight<span style="color:red">*</span></label>
+                                    <select class="form-control form-select">
+                                        <option>Select Weight </option>
+                                        <option>Cricket</option>
+                                        <option>Tennis</option>
+                                        <option>Volleyball</option>
+                                        <option> Baseball</option>
+                                        </select>
+                                 </div>
+                                   
+                                 
+
+                            </div>
+
+                            <br>
+
+                            <div class="row">
+                                <div class="col-4">
+                                   
+                                   <select class="form-control form-select">
+                                       <option>Select sport</option>
+                                       <option>Cricket</option>
+                                       <option>Tennis</option>
+                                       <option>Volleyball</option>
+                                       <option> Baseball</option>
+                                       </select>
+                                </div>
+                            
+                                   
+                                <div class="col-3">
+                                   
+                                   <select class="form-control form-select">
+                                       <option>Select  Age sport</option>
+                                       <option>Cricket</option>
+                                       <option>Tennis</option>
+                                       <option>Volleyball</option>
+                                       <option> Baseball</option>
+                                       </select>
+                                </div>
+                                
+
+                                <div class="col-3">
+                                   
+                                   <select class="form-control form-select">
+                                       <option>None Selected </option>
+                                       <option>Cricket</option>
+                                       <option>Tennis</option>
+                                       <option>Volleyball</option>
+                                       <option> Baseball</option>
+                                       </select>
+                                </div>
+                                  
+                                <div class="col-2">
+                                   <select class="form-control form-select">
+                                       <option>Select Weight </option>
+                                       <option>Cricket</option>
+                                       <option>Tennis</option>
+                                       <option>Volleyball</option>
+                                       <option> Baseball</option>
+                                       </select>
+                                </div>
+                                
+                                  
+                             </div> 
+                             <br> 
+                             
+                             <div class="row">
+                                <div class="col-4">
+                                   
+                                   <select class="form-control form-select">
+                                       <option>Select sport</option>
+                                       <option>Cricket</option>
+                                       <option>Tennis</option>
+                                       <option>Volleyball</option>
+                                       <option> Baseball</option>
+                                       </select>
+                                </div>
+                            
+                                   
+                                <div class="col-3">
+                                   
+                                   <select class="form-control form-select">
+                                       <option>Select  Age sport</option>
+                                       <option>Cricket</option>
+                                       <option>Tennis</option>
+                                       <option>Volleyball</option>
+                                       <option> Baseball</option>
+                                       </select>
+                                </div>
+                                
+
+                                <div class="col-3">
+                                   
+                                   <select class="form-control form-select">
+                                       <option>None Selected </option>
+                                       <option>Cricket</option>
+                                       <option>Tennis</option>
+                                       <option>Volleyball</option>
+                                       <option> Baseball</option>
+                                       </select>
+                                </div>
+                                  
+                                <div class="col-2">
+                                   <select class="form-control form-select">
+                                       <option>Select Weight </option>
+                                       <option>Cricket</option>
+                                       <option>Tennis</option>
+                                       <option>Volleyball</option>
+                                       <option> Baseball</option>
+                                       </select>
+                                </div>
+                                
+                                  
+                             </div>   
+
+                        </fieldset>
+                    </form>
+                    <br>
+                     <form>
+                      <fieldset class="mt-3">
+                        <legend>Doucment Upload</legend>
+                          <div class="row">
+                            <div class="col-5">
+                                 <span style="color: red;">*Photo</span><h5>(JPG Format only Upto 100 KB)</h5>
+                                 <img src="download.png" width="90" height="70" class="img1"><br>
+                                 <input type="file" name="name" class="form-control border-info border-opacity-50">
+                            </div>
+                             
+                            <div class="col-5">
+                                <span style="color: red;">*DOB: Birth Certificate/10th/8th/5th Marksheet</span>
+                                <h5>(JPG Format Only Upto 100KB)</h5>
+                                 
+                                <img src="download (1).png" widht="103" height="82" class="img2"><br>
+                                <input type="file" name="name" class="form-control border-info border-opacity-50">
+
+                            </div>
+                          </div>
+                      </fieldset>
+
+                      <button type="button" class="btn btn-danger">Clear</button>
+                     </form>
+                     <div class="card-footer rounded-3">
+
+                     </div>
+                </div>
+
+        </div>
+
+    </div>
+</body>
+</html> 
